@@ -1,25 +1,47 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+    "manifest_version": 3,
+    "name": "Spaced repetition ex",
+    "version": "1.0",
+    "description": "Use spaced repetition method to learn vocabulary",
+    "icons": {
+        "16": "SR_logo.png",
+        "32": "SR_logo.png",
+        "48": "SR_logo.png",
+        "128": "SR_logo.png"
     },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab",
+        "scripting",
+        "unlimitedStorage",
+        "alarms",
+        "notifications",
+        "nativeMessaging"
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "SR_logo.png"
     },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["main.js"],
+            "type": "module",
+            "run_at": "document_end",
+            "css": ["main.css"]
+        }
+    ],
+    "externally_connectable": {
+        "matches": ["*://*/*"]
+    },
+    "web_accessible_resources": [
+        {
+            "matches": ["*://*/*"],
+            "resources": ["content.js"]
+        }
+    ]
 }
