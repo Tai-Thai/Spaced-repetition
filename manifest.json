@@ -1,0 +1,47 @@
+{
+    "manifest_version": 3,
+    "name": "Spaced repetition ex",
+    "version": "1.0",
+    "description": "Use spaced repetition method to learn vocabulary",
+    "icons": {
+        "16": "SR_logo.png",
+        "32": "SR_logo.png",
+        "48": "SR_logo.png",
+        "128": "SR_logo.png"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab",
+        "scripting",
+        "unlimitedStorage",
+        "alarms",
+        "notifications",
+        "nativeMessaging"
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "SR_logo.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["main.js"],
+            "type": "module",
+            "run_at": "document_end",
+            "css": ["main.css"]
+        }
+    ],
+    "externally_connectable": {
+        "matches": ["*://*/*"]
+    },
+    "web_accessible_resources": [
+        {
+            "matches": ["*://*/*"],
+            "resources": ["content.js"]
+        }
+    ]
+}
