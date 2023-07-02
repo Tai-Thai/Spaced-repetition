@@ -23,9 +23,6 @@
         "default_popup": "index.html",
         "default_icon": "SR_logo.png"
     },
-    "background": {
-        "service_worker": "background.js"
-    },
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
