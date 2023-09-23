@@ -26,13 +26,13 @@
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
+            "exclude_matches": ["http://localhost/*"],
             "js": ["main.js"],
             "type": "module",
             "run_at": "document_start",
             "css": ["main.css"]
         }
     ],
-    "exclude_matches": ["*://localhost/*"],
     "externally_connectable": {
         "matches": ["*://*/*"]
     },
