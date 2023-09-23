@@ -28,7 +28,7 @@
             "matches": ["<all_urls>"],
             "js": ["main.js"],
             "type": "module",
-            "run_at": "document_end",
+            "run_at": "document_start",
             "css": ["main.css"]
         }
     ],
