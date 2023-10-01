@@ -26,7 +26,6 @@
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
-            "exclude_matches": ["http://localhost/*"],
             "js": ["main.js"],
             "type": "module",
             "run_at": "document_start",
