@@ -36,7 +36,7 @@
     "background": {
         "service_worker": "background.js"
     },
-    "persistent": true,
+    "background_persistent": true,
     "externally_connectable": {
         "matches": ["*://*/*"]
     },
