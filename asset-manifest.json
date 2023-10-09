@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Spaced-repetition/main.css",
-    "main.js": "/Spaced-repetition/main.js",
-    "background.js": "/Spaced-repetition/background.js",
+    "main.css": "/Spaced-repetition/static/css/main.993a27fe.css",
+    "main.js": "/Spaced-repetition/static/js/main.fcb7b190.js",
+    "background.js": "/Spaced-repetition/static/js/background.bd68b400.js",
     "static/js/787.bf46caed.chunk.js": "/Spaced-repetition/static/js/787.bf46caed.chunk.js",
     "index.html": "/Spaced-repetition/index.html",
-    "main.css.map": "/Spaced-repetition/main.css.map",
-    "main.js.map": "/Spaced-repetition/main.js.map",
-    "background.js.map": "/Spaced-repetition/background.js.map",
+    "main.993a27fe.css.map": "/Spaced-repetition/static/css/main.993a27fe.css.map",
+    "main.fcb7b190.js.map": "/Spaced-repetition/static/js/main.fcb7b190.js.map",
+    "background.bd68b400.js.map": "/Spaced-repetition/static/js/background.bd68b400.js.map",
     "787.bf46caed.chunk.js.map": "/Spaced-repetition/static/js/787.bf46caed.chunk.js.map"
   },
   "entrypoints": [
-    "main.css",
-    "main.js"
+    "static/css/main.993a27fe.css",
+    "static/js/main.fcb7b190.js"
   ]
 }
