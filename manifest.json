@@ -33,7 +33,7 @@
             "js": ["main.js"],
             "type": "module",
             "run_at": "document_start",
-            "css": ["static/css/main.993a27fe.css"]
+            "css": ["main.css"]
         }
     ],
     "background": {
