@@ -46,7 +46,7 @@
     "web_accessible_resources": [
         {
             "matches": ["*://*/*"],
-            "resources": ["content.js"]
+            "resources": ["content.js", "correct-sound.wav", "wrong-sound.wav"]
         }
     ]
 }
